@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lora:ital,wght@1,500&family=Montserrat:wght@100&family=Mulish:wght@200&family=Oleo+Script:wght@700&family=Work+Sans:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">supapraisekb.com User Experience Survey Form</h1>
+        <p id="description" class="description text-center">
+          Please take some time to help us improve our services to you
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Your Name goes here"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="example@email.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="enter your age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes you?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Please Select an Option</option>
+            <option value="blogger">Blogger</option>
+            <option value="Avid Reader">Avid Reader</option>
+            <option value="passive reader">Passive Reader</option>
+            <option value="writer">Writer</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend suparaisekb.com to your friends?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>What do you enjoy best about this blog?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="site layout">Site Layout</option>
+            <option value="story presentation">Story Presentation </option>
+            <option value="frequncy">Frequent Posts</option>
+            <option value="comments">Comments and Replies</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What chages would you  want to see?
+            <span class="clue">(Multiple Selections Allowed</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="music-videos"
+              type="checkbox"
+              class="input-checkbox"
+            />Music/Videos</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="shopping-update"
+              type="checkbox"
+              class="input-checkbox"
+            />Shopping updates</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="spicy-gossip"
+              type="checkbox"
+              class="input-checkbox"
+            />Spicy Gossip</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Politics"
+              type="checkbox"
+              class="input-checkbox"
+            />Political Analysis</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="sports-column"
+              type="checkbox"
+              class="input-checkbox"
+            />Sports Column</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="gitter-help-rooms"
+              type="checkbox"
+              class="input-checkbox"
+            />Gitter help rooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="hookups"
+              type="checkbox"
+              class="input-checkbox"
+            />Hookups</label>
+          
+        </div>
+
+        <div class="form-group"> 
+          <p>Please leave us your comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Comment and suggestions here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <footer> &copy; 2022 Designed by Praise Eze for Freecodecamp Assignment</footer>
+  </body>
+</html>
